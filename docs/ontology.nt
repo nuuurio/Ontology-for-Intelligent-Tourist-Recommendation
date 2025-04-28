@@ -1,0 +1,565 @@
+<http://example.org/tourism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://example.org/tourism#locatedIn
+<http://example.org/tourism#locatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://example.org/tourism#name
+<http://example.org/tourism#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://example.org/tourism#pricePerNight
+<http://example.org/tourism#pricePerNight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://example.org/tourism#rating
+<http://example.org/tourism#rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://example.org/tourism#stars
+<http://example.org/tourism#stars> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://example.org/tourism#type
+<http://example.org/tourism#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#cardinality
+<http://www.w3.org/2000/01/rdf-schema#cardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://example.org/tourism#hasAttraction
+<http://example.org/tourism#hasAttraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/tourism#hasAttraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://example.org/tourism#hasAttraction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/tourism#City> .
+<http://example.org/tourism#hasAttraction> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/tourism#Attraction> .
+<http://example.org/tourism#hasAttraction> <http://www.w3.org/2000/01/rdf-schema#cardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# http://example.org/tourism#hasEvent
+<http://example.org/tourism#hasEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/tourism#hasEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://example.org/tourism#hasEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/tourism#City> .
+<http://example.org/tourism#hasEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/tourism#Event> .
+<http://example.org/tourism#hasEvent> <http://www.w3.org/2000/01/rdf-schema#cardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# http://example.org/tourism#hasHotel
+<http://example.org/tourism#hasHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/tourism#hasHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://example.org/tourism#hasHotel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/tourism#City> .
+<http://example.org/tourism#hasHotel> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/tourism#Hotel> .
+<http://example.org/tourism#hasHotel> <http://www.w3.org/2000/01/rdf-schema#cardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# http://example.org/tourism#hasRestaurant
+<http://example.org/tourism#hasRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/tourism#hasRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://example.org/tourism#hasRestaurant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/tourism#City> .
+<http://example.org/tourism#hasRestaurant> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/tourism#Restaurant> .
+<http://example.org/tourism#hasRestaurant> <http://www.w3.org/2000/01/rdf-schema#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# http://example.org/tourism#hasTransport
+<http://example.org/tourism#hasTransport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/tourism#hasTransport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://example.org/tourism#hasTransport> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/tourism#City> .
+<http://example.org/tourism#hasTransport> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/tourism#Transport> .
+<http://example.org/tourism#hasTransport> <http://www.w3.org/2000/01/rdf-schema#cardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# http://example.org/tourism#isLocatedIn
+<http://example.org/tourism#isLocatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/tourism#isLocatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://example.org/tourism#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/tourism#Attraction> .
+<http://example.org/tourism#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/tourism#Event> .
+<http://example.org/tourism#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/tourism#Hotel> .
+<http://example.org/tourism#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/tourism#Restaurant> .
+<http://example.org/tourism#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/tourism#Transport> .
+<http://example.org/tourism#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/tourism#City> .
+<http://example.org/tourism#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://example.org/tourism#hasAverageCost
+<http://example.org/tourism#hasAverageCost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/tourism#hasAverageCost> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/tourism#Transport> .
+<http://example.org/tourism#hasAverageCost> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://example.org/tourism#hasAveragePrice
+<http://example.org/tourism#hasAveragePrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/tourism#hasAveragePrice> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/tourism#Restaurant> .
+<http://example.org/tourism#hasAveragePrice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://example.org/tourism#hasCompany
+<http://example.org/tourism#hasCompany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/tourism#hasCompany> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/tourism#Transport> .
+<http://example.org/tourism#hasCompany> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.org/tourism#hasDate
+<http://example.org/tourism#hasDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/tourism#hasDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/tourism#Event> .
+<http://example.org/tourism#hasDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+# 
+# http://example.org/tourism#hasLocation
+<http://example.org/tourism#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/tourism#hasLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/tourism#City> .
+<http://example.org/tourism#hasLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.org/tourism#hasName
+<http://example.org/tourism#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/tourism#hasName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/tourism#Attraction> .
+<http://example.org/tourism#hasName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/tourism#City> .
+<http://example.org/tourism#hasName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/tourism#Event> .
+<http://example.org/tourism#hasName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/tourism#Hotel> .
+<http://example.org/tourism#hasName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/tourism#Restaurant> .
+<http://example.org/tourism#hasName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.org/tourism#hasPricePerNight
+<http://example.org/tourism#hasPricePerNight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/tourism#hasPricePerNight> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/tourism#Hotel> .
+<http://example.org/tourism#hasPricePerNight> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://example.org/tourism#hasRating
+<http://example.org/tourism#hasRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/tourism#hasRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/tourism#Attraction> .
+<http://example.org/tourism#hasRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/tourism#Hotel> .
+<http://example.org/tourism#hasRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/tourism#Restaurant> .
+<http://example.org/tourism#hasRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://example.org/tourism#hasStars
+<http://example.org/tourism#hasStars> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/tourism#hasStars> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/tourism#Hotel> .
+<http://example.org/tourism#hasStars> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://example.org/tourism#Andalusian
+<http://example.org/tourism#Andalusian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/tourism#Andalusian> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/tourism#Restaurant> .
+<http://example.org/tourism#Andalusian> <http://www.w3.org/2000/01/rdf-schema#label> "Andalusian Restaurant" .
+<http://example.org/tourism#Andalusian> <http://www.w3.org/2004/02/skos/core#definition> "A restaurant featuring Andalusian cuisine, known for gazpacho, salmorejo, and fried fish." .
+# 
+# http://example.org/tourism#Attraction
+<http://example.org/tourism#Attraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/tourism#Attraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://example.org/tourism#City> .
+_:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://example.org/tourism#isLocatedIn> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://example.org/tourism#Attraction> <http://www.w3.org/2000/01/rdf-schema#label> "Attraction" .
+<http://example.org/tourism#Attraction> <http://www.w3.org/2004/02/skos/core#definition> "A place of interest where tourists visit, typically for cultural, historical, or natural significance." .
+# 
+# http://example.org/tourism#Beach
+<http://example.org/tourism#Beach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/tourism#Beach> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/tourism#Attraction> .
+<http://example.org/tourism#Beach> <http://www.w3.org/2000/01/rdf-schema#label> "Beach" .
+<http://example.org/tourism#Beach> <http://www.w3.org/2004/02/skos/core#definition> "A natural coastal area where visitors can relax, swim, and engage in seaside activities." .
+# 
+# http://example.org/tourism#BeachHotel
+<http://example.org/tourism#BeachHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/tourism#BeachHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/tourism#Hotel> .
+<http://example.org/tourism#BeachHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Beach Hotel" .
+<http://example.org/tourism#BeachHotel> <http://www.w3.org/2004/02/skos/core#definition> "A hotel located near a beach, providing direct access to seaside activities." .
+# 
+# http://example.org/tourism#Bicycle
+<http://example.org/tourism#Bicycle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/tourism#Bicycle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/tourism#Transport> .
+<http://example.org/tourism#Bicycle> <http://www.w3.org/2000/01/rdf-schema#label> "Bicycle" .
+<http://example.org/tourism#Bicycle> <http://www.w3.org/2004/02/skos/core#definition> "A human-powered transport vehicle with two wheels, commonly used for short-distance travel." .
+# 
+# http://example.org/tourism#Bus
+<http://example.org/tourism#Bus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/tourism#Bus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/tourism#Transport> .
+<http://example.org/tourism#Bus> <http://www.w3.org/2000/01/rdf-schema#label> "Bus" .
+<http://example.org/tourism#Bus> <http://www.w3.org/2004/02/skos/core#definition> "A road vehicle designed to carry many passengers, commonly used for public transportation." .
+# 
+# http://example.org/tourism#BusinessHotel
+<http://example.org/tourism#BusinessHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/tourism#BusinessHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/tourism#Hotel> .
+<http://example.org/tourism#BusinessHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Business Hotel" .
+<http://example.org/tourism#BusinessHotel> <http://www.w3.org/2004/02/skos/core#definition> "A hotel offering services and facilities tailored to business travelers." .
+# 
+# http://example.org/tourism#City
+<http://example.org/tourism#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/tourism#City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://example.org/tourism#Attraction> .
+_:genid2 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://example.org/tourism#hasAttraction> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://example.org/tourism#City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#onClass> <http://example.org/tourism#Event> .
+_:genid3 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://example.org/tourism#hasEvent> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://example.org/tourism#City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#onClass> <http://example.org/tourism#Hotel> .
+_:genid4 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://example.org/tourism#hasHotel> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://example.org/tourism#City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#onClass> <http://example.org/tourism#Restaurant> .
+_:genid5 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://example.org/tourism#hasRestaurant> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://example.org/tourism#City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#onClass> <http://example.org/tourism#Transport> .
+_:genid6 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://example.org/tourism#hasTransport> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://example.org/tourism#City> <http://www.w3.org/2000/01/rdf-schema#label> "City" .
+<http://example.org/tourism#City> <http://www.w3.org/2004/02/skos/core#definition> "A geographic location that includes various tourist services, attractions, and accommodations." .
+# 
+# http://example.org/tourism#CultureAttraction
+<http://example.org/tourism#CultureAttraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/tourism#CultureAttraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/tourism#Attraction> .
+<http://example.org/tourism#CultureAttraction> <http://www.w3.org/2000/01/rdf-schema#label> "Cultural Attraction" .
+<http://example.org/tourism#CultureAttraction> <http://www.w3.org/2004/02/skos/core#definition> "An attraction that promotes or showcases cultural heritage, such as theaters or art galleries." .
+# 
+# http://example.org/tourism#CultureEvent
+<http://example.org/tourism#CultureEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/tourism#CultureEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/tourism#Event> .
+<http://example.org/tourism#CultureEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Cultural Event" .
+<http://example.org/tourism#CultureEvent> <http://www.w3.org/2004/02/skos/core#definition> "An event celebrating aspects of culture, including art, dance, and traditions." .
+# 
+# http://example.org/tourism#Event
+<http://example.org/tourism#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/tourism#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#onClass> <http://example.org/tourism#City> .
+_:genid7 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://example.org/tourism#isLocatedIn> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://example.org/tourism#Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event" .
+<http://example.org/tourism#Event> <http://www.w3.org/2004/02/skos/core#definition> "An organized occasion taking place at a specific time and location, involving public participation." .
+# 
+# http://example.org/tourism#GastronomyEvent
+<http://example.org/tourism#GastronomyEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/tourism#GastronomyEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/tourism#Event> .
+<http://example.org/tourism#GastronomyEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Gastronomy Event" .
+<http://example.org/tourism#GastronomyEvent> <http://www.w3.org/2004/02/skos/core#definition> "An event showcasing food, culinary traditions, and gourmet experiences." .
+# 
+# http://example.org/tourism#Hotel
+<http://example.org/tourism#Hotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/tourism#Hotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#onClass> <http://example.org/tourism#City> .
+_:genid8 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://example.org/tourism#isLocatedIn> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://example.org/tourism#Hotel> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel" .
+<http://example.org/tourism#Hotel> <http://www.w3.org/2004/02/skos/core#definition> "A facility offering lodging, meals, and other guest services for travelers." .
+# 
+# http://example.org/tourism#Italian
+<http://example.org/tourism#Italian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/tourism#Italian> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/tourism#Restaurant> .
+<http://example.org/tourism#Italian> <http://www.w3.org/2000/01/rdf-schema#label> "Italian Restaurant" .
+<http://example.org/tourism#Italian> <http://www.w3.org/2004/02/skos/core#definition> "A restaurant focused on Italian cuisine, like pasta, pizza, and risotto." .
+# 
+# http://example.org/tourism#Japanese
+<http://example.org/tourism#Japanese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/tourism#Japanese> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/tourism#Restaurant> .
+<http://example.org/tourism#Japanese> <http://www.w3.org/2000/01/rdf-schema#label> "Japanese Restaurant" .
+<http://example.org/tourism#Japanese> <http://www.w3.org/2004/02/skos/core#definition> "A restaurant specializing in Japanese cuisine, such as sushi and ramen." .
+# 
+# http://example.org/tourism#LuxuryHotel
+<http://example.org/tourism#LuxuryHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/tourism#LuxuryHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/tourism#Hotel> .
+<http://example.org/tourism#LuxuryHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Luxury Hotel" .
+<http://example.org/tourism#LuxuryHotel> <http://www.w3.org/2004/02/skos/core#definition> "A premium hotel offering top-tier services, facilities, and accommodations." .
+# 
+# http://example.org/tourism#Mediterranean
+<http://example.org/tourism#Mediterranean> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/tourism#Mediterranean> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/tourism#Restaurant> .
+<http://example.org/tourism#Mediterranean> <http://www.w3.org/2000/01/rdf-schema#label> "Mediterranean Restaurant" .
+<http://example.org/tourism#Mediterranean> <http://www.w3.org/2004/02/skos/core#definition> "A restaurant serving dishes typical of Mediterranean countries, emphasizing fresh vegetables, olive oil, and seafood." .
+# 
+# http://example.org/tourism#Metro
+<http://example.org/tourism#Metro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/tourism#Metro> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/tourism#Transport> .
+<http://example.org/tourism#Metro> <http://www.w3.org/2000/01/rdf-schema#label> "Metro" .
+<http://example.org/tourism#Metro> <http://www.w3.org/2004/02/skos/core#definition> "An underground urban railway system for fast mass transportation." .
+# 
+# http://example.org/tourism#Mexican
+<http://example.org/tourism#Mexican> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/tourism#Mexican> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/tourism#Restaurant> .
+<http://example.org/tourism#Mexican> <http://www.w3.org/2000/01/rdf-schema#label> "Mexican Restaurant" .
+<http://example.org/tourism#Mexican> <http://www.w3.org/2004/02/skos/core#definition> "A restaurant offering traditional Mexican dishes, including tacos, enchiladas, and burritos." .
+# 
+# http://example.org/tourism#Monument
+<http://example.org/tourism#Monument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/tourism#Monument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/tourism#Attraction> .
+<http://example.org/tourism#Monument> <http://www.w3.org/2000/01/rdf-schema#label> "Monument" .
+<http://example.org/tourism#Monument> <http://www.w3.org/2004/02/skos/core#definition> "A historic structure or landmark preserved for its cultural significance." .
+# 
+# http://example.org/tourism#Museum
+<http://example.org/tourism#Museum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/tourism#Museum> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/tourism#Attraction> .
+<http://example.org/tourism#Museum> <http://www.w3.org/2000/01/rdf-schema#label> "Museum" .
+<http://example.org/tourism#Museum> <http://www.w3.org/2004/02/skos/core#definition> "An institution that conserves and exhibits objects of historical, artistic, or scientific importance." .
+# 
+# http://example.org/tourism#MusicEvent
+<http://example.org/tourism#MusicEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/tourism#MusicEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/tourism#Event> .
+<http://example.org/tourism#MusicEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Music Event" .
+<http://example.org/tourism#MusicEvent> <http://www.w3.org/2004/02/skos/core#definition> "An event centered around musical performances, such as concerts and festivals." .
+# 
+# http://example.org/tourism#Park
+<http://example.org/tourism#Park> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/tourism#Park> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/tourism#Attraction> .
+<http://example.org/tourism#Park> <http://www.w3.org/2000/01/rdf-schema#label> "Park" .
+<http://example.org/tourism#Park> <http://www.w3.org/2004/02/skos/core#definition> "A public outdoor area with green spaces, often used for recreation and relaxation." .
+# 
+# http://example.org/tourism#Restaurant
+<http://example.org/tourism#Restaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/tourism#Restaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#onClass> <http://example.org/tourism#City> .
+_:genid9 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://example.org/tourism#isLocatedIn> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://example.org/tourism#Restaurant> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurant" .
+<http://example.org/tourism#Restaurant> <http://www.w3.org/2004/02/skos/core#definition> "An establishment where meals are prepared and served to customers." .
+# 
+# http://example.org/tourism#RuralHotel
+<http://example.org/tourism#RuralHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/tourism#RuralHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/tourism#Hotel> .
+<http://example.org/tourism#RuralHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Rural Hotel" .
+<http://example.org/tourism#RuralHotel> <http://www.w3.org/2004/02/skos/core#definition> "A hotel located in a rural area, providing a countryside accommodation experience." .
+# 
+# http://example.org/tourism#SportsEvent
+<http://example.org/tourism#SportsEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/tourism#SportsEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/tourism#Event> .
+<http://example.org/tourism#SportsEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Sports Event" .
+<http://example.org/tourism#SportsEvent> <http://www.w3.org/2004/02/skos/core#definition> "An event focused on sports competitions or activities." .
+# 
+# http://example.org/tourism#Taxi
+<http://example.org/tourism#Taxi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/tourism#Taxi> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/tourism#Transport> .
+<http://example.org/tourism#Taxi> <http://www.w3.org/2000/01/rdf-schema#label> "Taxi" .
+<http://example.org/tourism#Taxi> <http://www.w3.org/2004/02/skos/core#definition> "A private transport service that carries passengers on demand." .
+# 
+# http://example.org/tourism#TechnologyEvent
+<http://example.org/tourism#TechnologyEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/tourism#TechnologyEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/tourism#Event> .
+<http://example.org/tourism#TechnologyEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Technology Event" .
+<http://example.org/tourism#TechnologyEvent> <http://www.w3.org/2004/02/skos/core#definition> "An event dedicated to technological innovations, such as conferences or expos." .
+# 
+# http://example.org/tourism#TouristHotel
+<http://example.org/tourism#TouristHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/tourism#TouristHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/tourism#Hotel> .
+<http://example.org/tourism#TouristHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Tourist Hotel" .
+<http://example.org/tourism#TouristHotel> <http://www.w3.org/2004/02/skos/core#definition> "An affordable hotel primarily targeting tourists with basic amenities." .
+# 
+# http://example.org/tourism#Train
+<http://example.org/tourism#Train> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/tourism#Train> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/tourism#Transport> .
+<http://example.org/tourism#Train> <http://www.w3.org/2000/01/rdf-schema#label> "Train" .
+<http://example.org/tourism#Train> <http://www.w3.org/2004/02/skos/core#definition> "A rail-based vehicle used for transporting passengers between cities or regions." .
+# 
+# http://example.org/tourism#Tram
+<http://example.org/tourism#Tram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/tourism#Tram> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/tourism#Transport> .
+<http://example.org/tourism#Tram> <http://www.w3.org/2000/01/rdf-schema#label> "Tram" .
+<http://example.org/tourism#Tram> <http://www.w3.org/2004/02/skos/core#definition> "A rail vehicle that runs on tracks along urban streets to transport passengers." .
+# 
+# http://example.org/tourism#Transport
+<http://example.org/tourism#Transport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/tourism#Transport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#onClass> <http://example.org/tourism#City> .
+_:genid10 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://example.org/tourism#isLocatedIn> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://example.org/tourism#Transport> <http://www.w3.org/2000/01/rdf-schema#label> "Transport" .
+<http://example.org/tourism#Transport> <http://www.w3.org/2004/02/skos/core#definition> "A means of traveling from one location to another within or between cities." .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/resource/Barcelona
+<http://dbpedia.org/resource/Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://dbpedia.org/resource/Barcelona> <http://www.w3.org/2002/07/owl#sameAs> <http://example.org/tourism#Barcelona> .
+# 
+# http://example.org/tourism#Barcelona
+# 
+# http://dbpedia.org/resource/La_Barceloneta
+<http://dbpedia.org/resource/La_Barceloneta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://dbpedia.org/resource/La_Barceloneta> <http://www.w3.org/2002/07/owl#sameAs> <http://example.org/tourism#La_Barceloneta> .
+# 
+# http://example.org/tourism#La_Barceloneta
+# 
+# http://dbpedia.org/resource/Park_G%C3%BCell
+<http://dbpedia.org/resource/Park_G%C3%BCell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://dbpedia.org/resource/Park_G%C3%BCell> <http://www.w3.org/2002/07/owl#sameAs> <http://example.org/tourism#Park_Guell> .
+# 
+# http://example.org/tourism#Park_Guell
+# 
+# http://example.org/tourism#Barcelona
+<http://example.org/tourism#Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/tourism#Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/tourism#City> .
+<http://example.org/tourism#Barcelona> <http://example.org/tourism#name> "Barcelona" .
+<http://example.org/tourism#Barcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Barcelona" .
+<http://example.org/tourism#Barcelona> <http://www.w3.org/2004/02/skos/core#definition> "A major city in Spain known for its culture, beaches, and architecture." .
+# 
+# http://example.org/tourism#La_Barceloneta
+<http://example.org/tourism#La_Barceloneta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/tourism#La_Barceloneta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/tourism#Beach> .
+<http://example.org/tourism#La_Barceloneta> <http://example.org/tourism#locatedIn> <http://example.org/tourism#Barcelona> .
+<http://example.org/tourism#La_Barceloneta> <http://example.org/tourism#name> "La Barceloneta" .
+<http://example.org/tourism#La_Barceloneta> <http://example.org/tourism#rating> "4.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/tourism#La_Barceloneta> <http://example.org/tourism#type> "Beach" .
+<http://example.org/tourism#La_Barceloneta> <http://www.w3.org/2000/01/rdf-schema#label> "La Barceloneta" .
+<http://example.org/tourism#La_Barceloneta> <http://www.w3.org/2004/02/skos/core#definition> "A popular beach in Barcelona famous for its lively atmosphere." .
+# 
+# http://example.org/tourism#Metro_L3
+<http://example.org/tourism#Metro_L3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/tourism#Metro_L3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/tourism#Metro> .
+<http://example.org/tourism#Metro_L3> <http://example.org/tourism#locatedIn> <http://example.org/tourism#Barcelona> .
+<http://example.org/tourism#Metro_L3> <http://example.org/tourism#name> "L3 Green Line" .
+<http://example.org/tourism#Metro_L3> <http://example.org/tourism#rating> "4.3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/tourism#Metro_L3> <http://example.org/tourism#type> "Metro" .
+<http://example.org/tourism#Metro_L3> <http://www.w3.org/2000/01/rdf-schema#label> "Metro Line L3" .
+<http://example.org/tourism#Metro_L3> <http://www.w3.org/2004/02/skos/core#definition> "Metro line in Barcelona connecting key touristic spots." .
+# 
+# http://example.org/tourism#Park_Guell
+<http://example.org/tourism#Park_Guell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/tourism#Park_Guell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/tourism#Park> .
+<http://example.org/tourism#Park_Guell> <http://example.org/tourism#locatedIn> <http://example.org/tourism#Barcelona> .
+<http://example.org/tourism#Park_Guell> <http://example.org/tourism#name> "Park Güell" .
+<http://example.org/tourism#Park_Guell> <http://example.org/tourism#rating> "4.6"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/tourism#Park_Guell> <http://example.org/tourism#type> "Park" .
+<http://example.org/tourism#Park_Guell> <http://www.w3.org/2000/01/rdf-schema#label> "Park Güell" .
+<http://example.org/tourism#Park_Guell> <http://www.w3.org/2004/02/skos/core#definition> "A public park system composed of gardens and architectonic elements located in Barcelona." .
+# 
+# http://example.org/tourism#W_Barcelona
+<http://example.org/tourism#W_Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/tourism#W_Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/tourism#LuxuryHotel> .
+<http://example.org/tourism#W_Barcelona> <http://example.org/tourism#locatedIn> <http://example.org/tourism#Barcelona> .
+<http://example.org/tourism#W_Barcelona> <http://example.org/tourism#name> "W Barcelona" .
+<http://example.org/tourism#W_Barcelona> <http://example.org/tourism#pricePerNight> "450.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/tourism#W_Barcelona> <http://example.org/tourism#rating> "4.7"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/tourism#W_Barcelona> <http://example.org/tourism#stars> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/tourism#W_Barcelona> <http://www.w3.org/2000/01/rdf-schema#label> "W Barcelona Hotel" .
+<http://example.org/tourism#W_Barcelona> <http://www.w3.org/2004/02/skos/core#definition> "A luxury hotel located at the beachfront in Barcelona." .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#t> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#company> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid11 <http://www.w3.org/2003/11/swrl#body> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid13 .
+_:genid13 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#e> .
+_:genid13 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid13 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://example.org/tourism#isLocatedIn> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
+_:genid15 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#e> .
+_:genid15 <http://www.w3.org/2003/11/swrl#classPredicate> <http://example.org/tourism#Event> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid11 <http://www.w3.org/2003/11/swrl#head> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid17 .
+_:genid17 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#e> .
+_:genid17 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid17 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://example.org/tourism#hasEvent> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid18 <http://www.w3.org/2003/11/swrl#body> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid20 .
+_:genid20 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#company> .
+_:genid20 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid20 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://example.org/tourism#hasCompany> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid22 .
+_:genid22 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid22 <http://www.w3.org/2003/11/swrl#classPredicate> <http://example.org/tourism#Transport> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid18 <http://www.w3.org/2003/11/swrl#head> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid24 .
+_:genid24 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#c> .
+_:genid24 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid24 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://example.org/tourism#isLocatedIn> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid25 <http://www.w3.org/2003/11/swrl#body> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
+_:genid27 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#company> .
+_:genid27 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid27 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://example.org/tourism#hasCompany> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid29 .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid29 <http://www.w3.org/2003/11/swrl#classPredicate> <http://example.org/tourism#Transport> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid25 <http://www.w3.org/2003/11/swrl#head> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid31 .
+_:genid31 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#cost> .
+_:genid31 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid31 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://example.org/tourism#hasAverageCost> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,0 +1,1437 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://example.org/tourism", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "http://example.org/tourism"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://example.org/tourism#Japanese",
+    "baseIri" : "http://example.org/tourism",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A restaurant specializing in Japanese cuisine, such as sushi and ramen.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Japanese",
+      "undefined" : "Japanese Restaurant"
+    },
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://example.org/tourism#Transport",
+    "baseIri" : "http://example.org/tourism",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A means of traveling from one location to another within or between cities.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Transport",
+      "undefined" : "Transport"
+    },
+    "subClasses" : [ "3", "4", "5", "6", "7", "8" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://example.org/tourism#TouristHotel",
+    "baseIri" : "http://example.org/tourism",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "An affordable hotel primarily targeting tourists with basic amenities.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TouristHotel",
+      "undefined" : "Tourist Hotel"
+    },
+    "id" : "15",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://example.org/tourism#BeachHotel",
+    "baseIri" : "http://example.org/tourism",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A hotel located near a beach, providing direct access to seaside activities.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BeachHotel",
+      "undefined" : "Beach Hotel"
+    },
+    "id" : "17",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://example.org/tourism#CultureAttraction",
+    "baseIri" : "http://example.org/tourism",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "An attraction that promotes or showcases cultural heritage, such as theaters or art galleries.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CultureAttraction",
+      "undefined" : "Cultural Attraction"
+    },
+    "id" : "18",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://example.org/tourism#Bus",
+    "baseIri" : "http://example.org/tourism",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A road vehicle designed to carry many passengers, commonly used for public transportation.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Bus",
+      "undefined" : "Bus"
+    },
+    "id" : "6",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://example.org/tourism#BusinessHotel",
+    "baseIri" : "http://example.org/tourism",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A hotel offering services and facilities tailored to business travelers.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BusinessHotel",
+      "undefined" : "Business Hotel"
+    },
+    "id" : "22",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://example.org/tourism#Event",
+    "baseIri" : "http://example.org/tourism",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "An organized occasion taking place at a specific time and location, involving public participation.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Event",
+      "undefined" : "Event"
+    },
+    "subClasses" : [ "42", "43", "37", "34", "41" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://example.org/tourism#Beach",
+    "baseIri" : "http://example.org/tourism",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A natural coastal area where visitors can relax, swim, and engage in seaside activities.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Beach",
+      "undefined" : "Beach"
+    },
+    "individuals" : [ {
+      "iri" : "http://example.org/tourism#La_Barceloneta",
+      "baseIri" : "http://example.org/tourism",
+      "annotations" : {
+        "locatedIn" : [ {
+          "identifier" : "locatedIn",
+          "language" : "undefined",
+          "value" : "http://example.org/tourism#Barcelona",
+          "type" : "iri"
+        } ],
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "La Barceloneta",
+          "type" : "label"
+        } ],
+        "rating" : [ {
+          "identifier" : "rating",
+          "language" : "undefined",
+          "value" : "4.5",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "undefined",
+          "value" : "A popular beach in Barcelona famous for its lively atmosphere.",
+          "type" : "label"
+        } ],
+        "type" : [ {
+          "identifier" : "type",
+          "language" : "undefined",
+          "value" : "Beach",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "La_Barceloneta",
+        "undefined" : "La Barceloneta"
+      }
+    } ],
+    "id" : "10",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://example.org/tourism#TechnologyEvent",
+    "baseIri" : "http://example.org/tourism",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "An event dedicated to technological innovations, such as conferences or expos.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TechnologyEvent",
+      "undefined" : "Technology Event"
+    },
+    "id" : "43",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://example.org/tourism#Mediterranean",
+    "baseIri" : "http://example.org/tourism",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A restaurant serving dishes typical of Mediterranean countries, emphasizing fresh vegetables, olive oil, and seafood.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Mediterranean",
+      "undefined" : "Mediterranean Restaurant"
+    },
+    "id" : "32",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://example.org/tourism#Italian",
+    "baseIri" : "http://example.org/tourism",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A restaurant focused on Italian cuisine, like pasta, pizza, and risotto.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Italian",
+      "undefined" : "Italian Restaurant"
+    },
+    "id" : "30",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://example.org/tourism#Restaurant",
+    "baseIri" : "http://example.org/tourism",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "An establishment where meals are prepared and served to customers.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Restaurant",
+      "undefined" : "Restaurant"
+    },
+    "subClasses" : [ "39", "0", "24", "32", "30" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://example.org/tourism#SportsEvent",
+    "baseIri" : "http://example.org/tourism",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "An event focused on sports competitions or activities.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SportsEvent",
+      "undefined" : "Sports Event"
+    },
+    "id" : "41",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://example.org/tourism#Mexican",
+    "baseIri" : "http://example.org/tourism",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A restaurant offering traditional Mexican dishes, including tacos, enchiladas, and burritos.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Mexican",
+      "undefined" : "Mexican Restaurant"
+    },
+    "id" : "24",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://example.org/tourism#Attraction",
+    "baseIri" : "http://example.org/tourism",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A place of interest where tourists visit, typically for cultural, historical, or natural significance.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Attraction",
+      "undefined" : "Attraction"
+    },
+    "subClasses" : [ "21", "18", "10", "53", "54" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://example.org/tourism#Tram",
+    "baseIri" : "http://example.org/tourism",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A rail vehicle that runs on tracks along urban streets to transport passengers.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Tram",
+      "undefined" : "Tram"
+    },
+    "id" : "5",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://example.org/tourism#CultureEvent",
+    "baseIri" : "http://example.org/tourism",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "An event celebrating aspects of culture, including art, dance, and traditions.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CultureEvent",
+      "undefined" : "Cultural Event"
+    },
+    "id" : "37",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://example.org/tourism#MusicEvent",
+    "baseIri" : "http://example.org/tourism",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "An event centered around musical performances, such as concerts and festivals.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MusicEvent",
+      "undefined" : "Music Event"
+    },
+    "id" : "34",
+    "superClasses" : [ "35" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "35", "11", "16", "27", "1" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "62"
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "35", "16", "11", "1" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://example.org/tourism#Train",
+    "baseIri" : "http://example.org/tourism",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A rail-based vehicle used for transporting passengers between cities or regions.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Train",
+      "undefined" : "Train"
+    },
+    "id" : "4",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://example.org/tourism#Taxi",
+    "baseIri" : "http://example.org/tourism",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A private transport service that carries passengers on demand.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Taxi",
+      "undefined" : "Taxi"
+    },
+    "id" : "3",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://example.org/tourism#GastronomyEvent",
+    "baseIri" : "http://example.org/tourism",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "An event showcasing food, culinary traditions, and gourmet experiences.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GastronomyEvent",
+      "undefined" : "Gastronomy Event"
+    },
+    "id" : "42",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "64",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://example.org/tourism#Metro",
+    "baseIri" : "http://example.org/tourism",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "An underground urban railway system for fast mass transportation.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Metro",
+      "undefined" : "Metro"
+    },
+    "individuals" : [ {
+      "iri" : "http://example.org/tourism#Metro_L3",
+      "baseIri" : "http://example.org/tourism",
+      "annotations" : {
+        "locatedIn" : [ {
+          "identifier" : "locatedIn",
+          "language" : "undefined",
+          "value" : "http://example.org/tourism#Barcelona",
+          "type" : "iri"
+        } ],
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "L3 Green Line",
+          "type" : "label"
+        } ],
+        "rating" : [ {
+          "identifier" : "rating",
+          "language" : "undefined",
+          "value" : "4.3",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "undefined",
+          "value" : "Metro line in Barcelona connecting key touristic spots.",
+          "type" : "label"
+        } ],
+        "type" : [ {
+          "identifier" : "type",
+          "language" : "undefined",
+          "value" : "Metro",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Metro_L3",
+        "undefined" : "Metro Line L3"
+      }
+    } ],
+    "id" : "7",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "65",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "66",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "16", "11", "1" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://example.org/tourism#Monument",
+    "baseIri" : "http://example.org/tourism",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A historic structure or landmark preserved for its cultural significance.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Monument",
+      "undefined" : "Monument"
+    },
+    "id" : "53",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "52",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "67",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://example.org/tourism#Bicycle",
+    "baseIri" : "http://example.org/tourism",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A human-powered transport vehicle with two wheels, commonly used for short-distance travel.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Bicycle",
+      "undefined" : "Bicycle"
+    },
+    "id" : "8",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://example.org/tourism#RuralHotel",
+    "baseIri" : "http://example.org/tourism",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A hotel located in a rural area, providing a countryside accommodation experience.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "RuralHotel",
+      "undefined" : "Rural Hotel"
+    },
+    "id" : "70",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://example.org/tourism#City",
+    "baseIri" : "http://example.org/tourism",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A geographic location that includes various tourist services, attractions, and accommodations.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "City",
+      "undefined" : "City"
+    },
+    "individuals" : [ {
+      "iri" : "http://example.org/tourism#Barcelona",
+      "baseIri" : "http://example.org/tourism",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "Barcelona",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "undefined",
+          "value" : "A major city in Spain known for its culture, beaches, and architecture.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Barcelona",
+        "undefined" : "Barcelona"
+      }
+    } ],
+    "id" : "27"
+  }, {
+    "iri" : "http://example.org/tourism#LuxuryHotel",
+    "baseIri" : "http://example.org/tourism",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A premium hotel offering top-tier services, facilities, and accommodations.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "LuxuryHotel",
+      "undefined" : "Luxury Hotel"
+    },
+    "individuals" : [ {
+      "iri" : "http://example.org/tourism#W_Barcelona",
+      "baseIri" : "http://example.org/tourism",
+      "annotations" : {
+        "locatedIn" : [ {
+          "identifier" : "locatedIn",
+          "language" : "undefined",
+          "value" : "http://example.org/tourism#Barcelona",
+          "type" : "iri"
+        } ],
+        "rating" : [ {
+          "identifier" : "rating",
+          "language" : "undefined",
+          "value" : "4.7",
+          "type" : "label"
+        } ],
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "W Barcelona",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "undefined",
+          "value" : "A luxury hotel located at the beachfront in Barcelona.",
+          "type" : "label"
+        } ],
+        "stars" : [ {
+          "identifier" : "stars",
+          "language" : "undefined",
+          "value" : "5",
+          "type" : "label"
+        } ],
+        "pricePerNight" : [ {
+          "identifier" : "pricePerNight",
+          "language" : "undefined",
+          "value" : "450.0",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "W_Barcelona",
+        "undefined" : "W Barcelona Hotel"
+      }
+    } ],
+    "id" : "76",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://example.org/tourism#Andalusian",
+    "baseIri" : "http://example.org/tourism",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A restaurant featuring Andalusian cuisine, known for gazpacho, salmorejo, and fried fish.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Andalusian",
+      "undefined" : "Andalusian Restaurant"
+    },
+    "id" : "39",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://example.org/tourism#Museum",
+    "baseIri" : "http://example.org/tourism",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "An institution that conserves and exhibits objects of historical, artistic, or scientific importance.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Museum",
+      "undefined" : "Museum"
+    },
+    "id" : "21",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://example.org/tourism#Hotel",
+    "baseIri" : "http://example.org/tourism",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A facility offering lodging, meals, and other guest services for travelers.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Hotel",
+      "undefined" : "Hotel"
+    },
+    "subClasses" : [ "17", "70", "22", "15", "76" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://example.org/tourism#Park",
+    "baseIri" : "http://example.org/tourism",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A public outdoor area with green spaces, often used for recreation and relaxation.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Park",
+      "undefined" : "Park"
+    },
+    "individuals" : [ {
+      "iri" : "http://example.org/tourism#Park_Guell",
+      "baseIri" : "http://example.org/tourism",
+      "annotations" : {
+        "locatedIn" : [ {
+          "identifier" : "locatedIn",
+          "language" : "undefined",
+          "value" : "http://example.org/tourism#Barcelona",
+          "type" : "iri"
+        } ],
+        "rating" : [ {
+          "identifier" : "rating",
+          "language" : "undefined",
+          "value" : "4.6",
+          "type" : "label"
+        } ],
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "Park Güell",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "undefined",
+          "value" : "A public park system composed of gardens and architectonic elements located in Barcelona.",
+          "type" : "label"
+        } ],
+        "type" : [ {
+          "identifier" : "type",
+          "language" : "undefined",
+          "value" : "Park",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Park_Guell",
+        "undefined" : "Park Güell"
+      }
+    } ],
+    "id" : "54",
+    "superClasses" : [ "11" ]
+  } ],
+  "property" : [ {
+    "id" : "9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "11",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://example.org/tourism#hasRating",
+    "baseIri" : "http://example.org/tourism",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasRating"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype" ],
+    "id" : "12"
+  }, {
+    "range" : "11",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "19"
+  }, {
+    "range" : "11",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "20"
+  }, {
+    "range" : "1",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "23"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://example.org/tourism#hasLocation",
+    "baseIri" : "http://example.org/tourism",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "hasLocation"
+    },
+    "domain" : "27",
+    "attributes" : [ "datatype" ],
+    "id" : "26"
+  }, {
+    "range" : "1",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "29"
+  }, {
+    "range" : "1",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "31"
+  }, {
+    "range" : "35",
+    "domain" : "34",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
+  }, {
+    "range" : "35",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "36"
+  }, {
+    "range" : "1",
+    "domain" : "39",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "38"
+  }, {
+    "range" : "35",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://example.org/tourism#isLocatedIn",
+    "baseIri" : "http://example.org/tourism",
+    "range" : "27",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "1",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isLocatedIn"
+    },
+    "domain" : "45",
+    "attributes" : [ "object", "functional" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://example.org/tourism#hasPricePerNight",
+    "baseIri" : "http://example.org/tourism",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "hasPricePerNight"
+    },
+    "domain" : "16",
+    "attributes" : [ "datatype" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://example.org/tourism#hasDate",
+    "baseIri" : "http://example.org/tourism",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "hasDate"
+    },
+    "domain" : "35",
+    "attributes" : [ "datatype" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://example.org/tourism#hasRestaurant",
+    "baseIri" : "http://example.org/tourism",
+    "range" : "1",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "1",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasRestaurant"
+    },
+    "domain" : "27",
+    "attributes" : [ "inverse functional", "object" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://example.org/tourism#hasAverageCost",
+    "baseIri" : "http://example.org/tourism",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "hasAverageCost"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "51"
+  }, {
+    "range" : "35",
+    "domain" : "42",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "55"
+  }, {
+    "range" : "2",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "56"
+  }, {
+    "range" : "35",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "57"
+  }, {
+    "range" : "2",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "58"
+  }, {
+    "range" : "2",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "59"
+  }, {
+    "range" : "2",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "60"
+  }, {
+    "range" : "2",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "61"
+  }, {
+    "range" : "2",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://example.org/tourism#hasEvent",
+    "baseIri" : "http://example.org/tourism",
+    "range" : "35",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "0",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasEvent"
+    },
+    "domain" : "27",
+    "attributes" : [ "inverse functional", "object" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://example.org/tourism#hasHotel",
+    "baseIri" : "http://example.org/tourism",
+    "range" : "16",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "0",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasHotel"
+    },
+    "domain" : "27",
+    "attributes" : [ "inverse functional", "object" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://example.org/tourism#hasAttraction",
+    "baseIri" : "http://example.org/tourism",
+    "range" : "11",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "0",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasAttraction"
+    },
+    "domain" : "27",
+    "attributes" : [ "inverse functional", "object" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://example.org/tourism#hasCompany",
+    "baseIri" : "http://example.org/tourism",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "hasCompany"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://example.org/tourism#hasAveragePrice",
+    "baseIri" : "http://example.org/tourism",
+    "range" : "67",
+    "label" : {
+      "IRI-based" : "hasAveragePrice"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://example.org/tourism#hasStars",
+    "baseIri" : "http://example.org/tourism",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "hasStars"
+    },
+    "domain" : "16",
+    "attributes" : [ "datatype" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://example.org/tourism#hasName",
+    "baseIri" : "http://example.org/tourism",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "hasName"
+    },
+    "domain" : "62",
+    "attributes" : [ "datatype" ],
+    "id" : "75"
+  }, {
+    "range" : "16",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "77"
+  }, {
+    "range" : "16",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "78"
+  }, {
+    "range" : "16",
+    "domain" : "76",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://example.org/tourism#hasTransport",
+    "baseIri" : "http://example.org/tourism",
+    "range" : "2",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "0",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTransport"
+    },
+    "domain" : "27",
+    "attributes" : [ "inverse functional", "object" ],
+    "id" : "80"
+  }, {
+    "range" : "11",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "81"
+  }, {
+    "range" : "11",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "82"
+  }, {
+    "range" : "16",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "83"
+  }, {
+    "range" : "16",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "84"
+  } ]
+}
