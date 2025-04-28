@@ -1,0 +1,1020 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://example.org/tourism#"
+     xml:base="http://example.org/tourism"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:tourism="http://example.org/tourism#">
+    <owl:Ontology rdf:about="http://example.org/tourism"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://example.org/tourism#locatedIn -->
+
+
+    <owl:AnnotationProperty rdf:about="http://example.org/tourism#locatedIn"/>
+    
+
+
+    <!-- http://example.org/tourism#name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://example.org/tourism#name"/>
+    
+
+
+    <!-- http://example.org/tourism#pricePerNight -->
+
+
+    <owl:AnnotationProperty rdf:about="http://example.org/tourism#pricePerNight"/>
+    
+
+
+    <!-- http://example.org/tourism#rating -->
+
+
+    <owl:AnnotationProperty rdf:about="http://example.org/tourism#rating"/>
+    
+
+
+    <!-- http://example.org/tourism#stars -->
+
+
+    <owl:AnnotationProperty rdf:about="http://example.org/tourism#stars"/>
+    
+
+
+    <!-- http://example.org/tourism#type -->
+
+
+    <owl:AnnotationProperty rdf:about="http://example.org/tourism#type"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#cardinality -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#cardinality"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://example.org/tourism#hasAttraction -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/tourism#hasAttraction">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/tourism#City"/>
+        <rdfs:range rdf:resource="http://example.org/tourism#Attraction"/>
+        <rdfs:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</rdfs:cardinality>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/tourism#hasEvent -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/tourism#hasEvent">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/tourism#City"/>
+        <rdfs:range rdf:resource="http://example.org/tourism#Event"/>
+        <rdfs:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</rdfs:cardinality>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/tourism#hasHotel -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/tourism#hasHotel">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/tourism#City"/>
+        <rdfs:range rdf:resource="http://example.org/tourism#Hotel"/>
+        <rdfs:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</rdfs:cardinality>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/tourism#hasRestaurant -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/tourism#hasRestaurant">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/tourism#City"/>
+        <rdfs:range rdf:resource="http://example.org/tourism#Restaurant"/>
+        <rdfs:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</rdfs:cardinality>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/tourism#hasTransport -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/tourism#hasTransport">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/tourism#City"/>
+        <rdfs:range rdf:resource="http://example.org/tourism#Transport"/>
+        <rdfs:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</rdfs:cardinality>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/tourism#isLocatedIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/tourism#isLocatedIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/tourism#Attraction"/>
+        <rdfs:domain rdf:resource="http://example.org/tourism#Event"/>
+        <rdfs:domain rdf:resource="http://example.org/tourism#Hotel"/>
+        <rdfs:domain rdf:resource="http://example.org/tourism#Restaurant"/>
+        <rdfs:domain rdf:resource="http://example.org/tourism#Transport"/>
+        <rdfs:range rdf:resource="http://example.org/tourism#City"/>
+        <rdfs:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</rdfs:cardinality>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://example.org/tourism#hasAverageCost -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/tourism#hasAverageCost">
+        <rdfs:domain rdf:resource="http://example.org/tourism#Transport"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/tourism#hasAveragePrice -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/tourism#hasAveragePrice">
+        <rdfs:domain rdf:resource="http://example.org/tourism#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/tourism#hasCompany -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/tourism#hasCompany">
+        <rdfs:domain rdf:resource="http://example.org/tourism#Transport"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/tourism#hasDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/tourism#hasDate">
+        <rdfs:domain rdf:resource="http://example.org/tourism#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/tourism#hasLocation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/tourism#hasLocation">
+        <rdfs:domain rdf:resource="http://example.org/tourism#City"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/tourism#hasName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/tourism#hasName">
+        <rdfs:domain rdf:resource="http://example.org/tourism#Attraction"/>
+        <rdfs:domain rdf:resource="http://example.org/tourism#City"/>
+        <rdfs:domain rdf:resource="http://example.org/tourism#Event"/>
+        <rdfs:domain rdf:resource="http://example.org/tourism#Hotel"/>
+        <rdfs:domain rdf:resource="http://example.org/tourism#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/tourism#hasPricePerNight -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/tourism#hasPricePerNight">
+        <rdfs:domain rdf:resource="http://example.org/tourism#Hotel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/tourism#hasRating -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/tourism#hasRating">
+        <rdfs:domain rdf:resource="http://example.org/tourism#Attraction"/>
+        <rdfs:domain rdf:resource="http://example.org/tourism#Hotel"/>
+        <rdfs:domain rdf:resource="http://example.org/tourism#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/tourism#hasStars -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/tourism#hasStars">
+        <rdfs:domain rdf:resource="http://example.org/tourism#Hotel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://example.org/tourism#Andalusian -->
+
+
+    <owl:Class rdf:about="http://example.org/tourism#Andalusian">
+        <rdfs:subClassOf rdf:resource="http://example.org/tourism#Restaurant"/>
+        <rdfs:label>Andalusian Restaurant</rdfs:label>
+        <skos:definition>A restaurant featuring Andalusian cuisine, known for gazpacho, salmorejo, and fried fish.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/tourism#Attraction -->
+
+
+    <owl:Class rdf:about="http://example.org/tourism#Attraction">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/tourism#isLocatedIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/tourism#City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Attraction</rdfs:label>
+        <skos:definition>A place of interest where tourists visit, typically for cultural, historical, or natural significance.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/tourism#Beach -->
+
+
+    <owl:Class rdf:about="http://example.org/tourism#Beach">
+        <rdfs:subClassOf rdf:resource="http://example.org/tourism#Attraction"/>
+        <rdfs:label>Beach</rdfs:label>
+        <skos:definition>A natural coastal area where visitors can relax, swim, and engage in seaside activities.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/tourism#BeachHotel -->
+
+
+    <owl:Class rdf:about="http://example.org/tourism#BeachHotel">
+        <rdfs:subClassOf rdf:resource="http://example.org/tourism#Hotel"/>
+        <rdfs:label>Beach Hotel</rdfs:label>
+        <skos:definition>A hotel located near a beach, providing direct access to seaside activities.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/tourism#Bicycle -->
+
+
+    <owl:Class rdf:about="http://example.org/tourism#Bicycle">
+        <rdfs:subClassOf rdf:resource="http://example.org/tourism#Transport"/>
+        <rdfs:label>Bicycle</rdfs:label>
+        <skos:definition>A human-powered transport vehicle with two wheels, commonly used for short-distance travel.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/tourism#Bus -->
+
+
+    <owl:Class rdf:about="http://example.org/tourism#Bus">
+        <rdfs:subClassOf rdf:resource="http://example.org/tourism#Transport"/>
+        <rdfs:label>Bus</rdfs:label>
+        <skos:definition>A road vehicle designed to carry many passengers, commonly used for public transportation.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/tourism#BusinessHotel -->
+
+
+    <owl:Class rdf:about="http://example.org/tourism#BusinessHotel">
+        <rdfs:subClassOf rdf:resource="http://example.org/tourism#Hotel"/>
+        <rdfs:label>Business Hotel</rdfs:label>
+        <skos:definition>A hotel offering services and facilities tailored to business travelers.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/tourism#City -->
+
+
+    <owl:Class rdf:about="http://example.org/tourism#City">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/tourism#hasAttraction"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/tourism#Attraction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/tourism#hasEvent"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/tourism#Event"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/tourism#hasHotel"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/tourism#Hotel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/tourism#hasRestaurant"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/tourism#Restaurant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/tourism#hasTransport"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/tourism#Transport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>City</rdfs:label>
+        <skos:definition>A geographic location that includes various tourist services, attractions, and accommodations.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/tourism#CultureAttraction -->
+
+
+    <owl:Class rdf:about="http://example.org/tourism#CultureAttraction">
+        <rdfs:subClassOf rdf:resource="http://example.org/tourism#Attraction"/>
+        <rdfs:label>Cultural Attraction</rdfs:label>
+        <skos:definition>An attraction that promotes or showcases cultural heritage, such as theaters or art galleries.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/tourism#CultureEvent -->
+
+
+    <owl:Class rdf:about="http://example.org/tourism#CultureEvent">
+        <rdfs:subClassOf rdf:resource="http://example.org/tourism#Event"/>
+        <rdfs:label>Cultural Event</rdfs:label>
+        <skos:definition>An event celebrating aspects of culture, including art, dance, and traditions.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/tourism#Event -->
+
+
+    <owl:Class rdf:about="http://example.org/tourism#Event">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/tourism#isLocatedIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/tourism#City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Event</rdfs:label>
+        <skos:definition>An organized occasion taking place at a specific time and location, involving public participation.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/tourism#GastronomyEvent -->
+
+
+    <owl:Class rdf:about="http://example.org/tourism#GastronomyEvent">
+        <rdfs:subClassOf rdf:resource="http://example.org/tourism#Event"/>
+        <rdfs:label>Gastronomy Event</rdfs:label>
+        <skos:definition>An event showcasing food, culinary traditions, and gourmet experiences.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/tourism#Hotel -->
+
+
+    <owl:Class rdf:about="http://example.org/tourism#Hotel">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/tourism#isLocatedIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/tourism#City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Hotel</rdfs:label>
+        <skos:definition>A facility offering lodging, meals, and other guest services for travelers.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/tourism#Italian -->
+
+
+    <owl:Class rdf:about="http://example.org/tourism#Italian">
+        <rdfs:subClassOf rdf:resource="http://example.org/tourism#Restaurant"/>
+        <rdfs:label>Italian Restaurant</rdfs:label>
+        <skos:definition>A restaurant focused on Italian cuisine, like pasta, pizza, and risotto.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/tourism#Japanese -->
+
+
+    <owl:Class rdf:about="http://example.org/tourism#Japanese">
+        <rdfs:subClassOf rdf:resource="http://example.org/tourism#Restaurant"/>
+        <rdfs:label>Japanese Restaurant</rdfs:label>
+        <skos:definition>A restaurant specializing in Japanese cuisine, such as sushi and ramen.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/tourism#LuxuryHotel -->
+
+
+    <owl:Class rdf:about="http://example.org/tourism#LuxuryHotel">
+        <rdfs:subClassOf rdf:resource="http://example.org/tourism#Hotel"/>
+        <rdfs:label>Luxury Hotel</rdfs:label>
+        <skos:definition>A premium hotel offering top-tier services, facilities, and accommodations.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/tourism#Mediterranean -->
+
+
+    <owl:Class rdf:about="http://example.org/tourism#Mediterranean">
+        <rdfs:subClassOf rdf:resource="http://example.org/tourism#Restaurant"/>
+        <rdfs:label>Mediterranean Restaurant</rdfs:label>
+        <skos:definition>A restaurant serving dishes typical of Mediterranean countries, emphasizing fresh vegetables, olive oil, and seafood.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/tourism#Metro -->
+
+
+    <owl:Class rdf:about="http://example.org/tourism#Metro">
+        <rdfs:subClassOf rdf:resource="http://example.org/tourism#Transport"/>
+        <rdfs:label>Metro</rdfs:label>
+        <skos:definition>An underground urban railway system for fast mass transportation.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/tourism#Mexican -->
+
+
+    <owl:Class rdf:about="http://example.org/tourism#Mexican">
+        <rdfs:subClassOf rdf:resource="http://example.org/tourism#Restaurant"/>
+        <rdfs:label>Mexican Restaurant</rdfs:label>
+        <skos:definition>A restaurant offering traditional Mexican dishes, including tacos, enchiladas, and burritos.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/tourism#Monument -->
+
+
+    <owl:Class rdf:about="http://example.org/tourism#Monument">
+        <rdfs:subClassOf rdf:resource="http://example.org/tourism#Attraction"/>
+        <rdfs:label>Monument</rdfs:label>
+        <skos:definition>A historic structure or landmark preserved for its cultural significance.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/tourism#Museum -->
+
+
+    <owl:Class rdf:about="http://example.org/tourism#Museum">
+        <rdfs:subClassOf rdf:resource="http://example.org/tourism#Attraction"/>
+        <rdfs:label>Museum</rdfs:label>
+        <skos:definition>An institution that conserves and exhibits objects of historical, artistic, or scientific importance.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/tourism#MusicEvent -->
+
+
+    <owl:Class rdf:about="http://example.org/tourism#MusicEvent">
+        <rdfs:subClassOf rdf:resource="http://example.org/tourism#Event"/>
+        <rdfs:label>Music Event</rdfs:label>
+        <skos:definition>An event centered around musical performances, such as concerts and festivals.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/tourism#Park -->
+
+
+    <owl:Class rdf:about="http://example.org/tourism#Park">
+        <rdfs:subClassOf rdf:resource="http://example.org/tourism#Attraction"/>
+        <rdfs:label>Park</rdfs:label>
+        <skos:definition>A public outdoor area with green spaces, often used for recreation and relaxation.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/tourism#Restaurant -->
+
+
+    <owl:Class rdf:about="http://example.org/tourism#Restaurant">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/tourism#isLocatedIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/tourism#City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Restaurant</rdfs:label>
+        <skos:definition>An establishment where meals are prepared and served to customers.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/tourism#RuralHotel -->
+
+
+    <owl:Class rdf:about="http://example.org/tourism#RuralHotel">
+        <rdfs:subClassOf rdf:resource="http://example.org/tourism#Hotel"/>
+        <rdfs:label>Rural Hotel</rdfs:label>
+        <skos:definition>A hotel located in a rural area, providing a countryside accommodation experience.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/tourism#SportsEvent -->
+
+
+    <owl:Class rdf:about="http://example.org/tourism#SportsEvent">
+        <rdfs:subClassOf rdf:resource="http://example.org/tourism#Event"/>
+        <rdfs:label>Sports Event</rdfs:label>
+        <skos:definition>An event focused on sports competitions or activities.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/tourism#Taxi -->
+
+
+    <owl:Class rdf:about="http://example.org/tourism#Taxi">
+        <rdfs:subClassOf rdf:resource="http://example.org/tourism#Transport"/>
+        <rdfs:label>Taxi</rdfs:label>
+        <skos:definition>A private transport service that carries passengers on demand.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/tourism#TechnologyEvent -->
+
+
+    <owl:Class rdf:about="http://example.org/tourism#TechnologyEvent">
+        <rdfs:subClassOf rdf:resource="http://example.org/tourism#Event"/>
+        <rdfs:label>Technology Event</rdfs:label>
+        <skos:definition>An event dedicated to technological innovations, such as conferences or expos.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/tourism#TouristHotel -->
+
+
+    <owl:Class rdf:about="http://example.org/tourism#TouristHotel">
+        <rdfs:subClassOf rdf:resource="http://example.org/tourism#Hotel"/>
+        <rdfs:label>Tourist Hotel</rdfs:label>
+        <skos:definition>An affordable hotel primarily targeting tourists with basic amenities.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/tourism#Train -->
+
+
+    <owl:Class rdf:about="http://example.org/tourism#Train">
+        <rdfs:subClassOf rdf:resource="http://example.org/tourism#Transport"/>
+        <rdfs:label>Train</rdfs:label>
+        <skos:definition>A rail-based vehicle used for transporting passengers between cities or regions.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/tourism#Tram -->
+
+
+    <owl:Class rdf:about="http://example.org/tourism#Tram">
+        <rdfs:subClassOf rdf:resource="http://example.org/tourism#Transport"/>
+        <rdfs:label>Tram</rdfs:label>
+        <skos:definition>A rail vehicle that runs on tracks along urban streets to transport passengers.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/tourism#Transport -->
+
+
+    <owl:Class rdf:about="http://example.org/tourism#Transport">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/tourism#isLocatedIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/tourism#City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Transport</rdfs:label>
+        <skos:definition>A means of traveling from one location to another within or between cities.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://dbpedia.org/resource/Barcelona -->
+
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Barcelona">
+        <owl:sameAs rdf:resource="http://example.org/tourism#Barcelona"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/tourism#Barcelona -->
+
+
+    <rdf:Description rdf:about="http://example.org/tourism#Barcelona"/>
+    
+
+
+    <!-- http://dbpedia.org/resource/La_Barceloneta -->
+
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/La_Barceloneta">
+        <owl:sameAs rdf:resource="http://example.org/tourism#La_Barceloneta"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/tourism#La_Barceloneta -->
+
+
+    <rdf:Description rdf:about="http://example.org/tourism#La_Barceloneta"/>
+    
+
+
+    <!-- http://dbpedia.org/resource/Park_G%C3%BCell -->
+
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Park_G%C3%BCell">
+        <owl:sameAs rdf:resource="http://example.org/tourism#Park_Guell"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/tourism#Park_Guell -->
+
+
+    <rdf:Description rdf:about="http://example.org/tourism#Park_Guell"/>
+    
+
+
+    <!-- http://example.org/tourism#Barcelona -->
+
+
+    <owl:NamedIndividual rdf:about="http://example.org/tourism#Barcelona">
+        <rdf:type rdf:resource="http://example.org/tourism#City"/>
+        <name>Barcelona</name>
+        <rdfs:label>Barcelona</rdfs:label>
+        <skos:definition>A major city in Spain known for its culture, beaches, and architecture.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/tourism#La_Barceloneta -->
+
+
+    <owl:NamedIndividual rdf:about="http://example.org/tourism#La_Barceloneta">
+        <rdf:type rdf:resource="http://example.org/tourism#Beach"/>
+        <locatedIn rdf:resource="http://example.org/tourism#Barcelona"/>
+        <name>La Barceloneta</name>
+        <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rating>
+        <type>Beach</type>
+        <rdfs:label>La Barceloneta</rdfs:label>
+        <skos:definition>A popular beach in Barcelona famous for its lively atmosphere.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/tourism#Metro_L3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://example.org/tourism#Metro_L3">
+        <rdf:type rdf:resource="http://example.org/tourism#Metro"/>
+        <locatedIn rdf:resource="http://example.org/tourism#Barcelona"/>
+        <name>L3 Green Line</name>
+        <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.3</rating>
+        <type>Metro</type>
+        <rdfs:label>Metro Line L3</rdfs:label>
+        <skos:definition>Metro line in Barcelona connecting key touristic spots.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/tourism#Park_Guell -->
+
+
+    <owl:NamedIndividual rdf:about="http://example.org/tourism#Park_Guell">
+        <rdf:type rdf:resource="http://example.org/tourism#Park"/>
+        <locatedIn rdf:resource="http://example.org/tourism#Barcelona"/>
+        <name>Park Güell</name>
+        <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</rating>
+        <type>Park</type>
+        <rdfs:label>Park Güell</rdfs:label>
+        <skos:definition>A public park system composed of gardens and architectonic elements located in Barcelona.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/tourism#W_Barcelona -->
+
+
+    <owl:NamedIndividual rdf:about="http://example.org/tourism#W_Barcelona">
+        <rdf:type rdf:resource="http://example.org/tourism#LuxuryHotel"/>
+        <locatedIn rdf:resource="http://example.org/tourism#Barcelona"/>
+        <name>W Barcelona</name>
+        <pricePerNight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">450.0</pricePerNight>
+        <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</rating>
+        <stars rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</stars>
+        <rdfs:label>W Barcelona Hotel</rdfs:label>
+        <skos:definition>A luxury hotel located at the beachfront in Barcelona.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="urn:swrl:var#e">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#company">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#cost">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://example.org/tourism#Event"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#e"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://example.org/tourism#isLocatedIn"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#c"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#e"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://example.org/tourism#hasEvent"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#c"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#e"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://example.org/tourism#Transport"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://example.org/tourism#hasCompany"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#company"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://example.org/tourism#isLocatedIn"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://example.org/tourism#Transport"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://example.org/tourism#hasCompany"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#company"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://example.org/tourism#hasAverageCost"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#cost"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
